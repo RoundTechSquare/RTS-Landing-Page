@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
 /*!
  * Bootstrap v5.0.0-beta2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7,7 +8,7 @@
  */
 :root {
   --bs-primary: #ff5722;
-  --bs-secondary: #5034fc;
+  --bs-secondary: #086AD8;
   --bs-black: #000;
   --bs-white: #fff;
   --bs-boulder: #747474;
@@ -27,7 +28,7 @@
   --bs-tree-poppy: #ff971d;
   --bs-ebony-clay: #25373f;
   --bs-electric-violet: #5338fc;
-  --bs-electric-violet-2: #5034fc;
+  --bs-electric-violet-2: #086AD8;
   --bs-radical-red: #ff4057;
   --bs-golden-tainoi: #ffd166;
   --bs-oxford-blue: #3b4656;
@@ -48,7 +49,7 @@
   --bs-cod-gray: #161616;
   --bs-half-baked: #82c4c3;
   --bs-primary: #ff5722;
-  --bs-secondary: #5034fc;
+  --bs-secondary: #086AD8;
   --bs-custom-color: #900;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -69,7 +70,7 @@
 
 body {
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -2603,8 +2604,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input:checked {
-  background-color: #5034fc;
-  border-color: #5034fc;
+  background-color: #086AD8;
+  border-color: #086AD8;
 }
 
 .form-check-input:checked[type="checkbox"] {
@@ -3118,7 +3119,7 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
-  font-family: "Rubik", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.88;
   color: var(--color-texts);
@@ -3199,8 +3200,8 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #5034fc;
-  border-color: #5034fc;
+  background-color: #086AD8;
+  border-color: #086AD8;
 }
 
 .btn-secondary:hover {
@@ -3232,8 +3233,8 @@ fieldset:disabled .btn {
 
 .btn-secondary:disabled, .btn-secondary.disabled {
   color: #fff;
-  background-color: #5034fc;
-  border-color: #5034fc;
+  background-color: #086AD8;
+  border-color: #086AD8;
 }
 
 .btn-custom-color {
@@ -3308,14 +3309,14 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-secondary {
-  color: #5034fc;
-  border-color: #5034fc;
+  color: #086AD8;
+  border-color: #086AD8;
 }
 
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #5034fc;
-  border-color: #5034fc;
+  background-color: #086AD8;
+  border-color: #086AD8;
 }
 
 .btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
@@ -3325,8 +3326,8 @@ fieldset:disabled .btn {
 .btn-check:checked + .btn-outline-secondary,
 .btn-check:active + .btn-outline-secondary, .btn-outline-secondary:active, .btn-outline-secondary.active, .btn-outline-secondary.dropdown-toggle.show {
   color: #fff;
-  background-color: #5034fc;
-  border-color: #5034fc;
+  background-color: #086AD8;
+  border-color: #086AD8;
 }
 
 .btn-check:checked + .btn-outline-secondary:focus,
@@ -3335,7 +3336,7 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-secondary:disabled, .btn-outline-secondary.disabled {
-  color: #5034fc;
+  color: #086AD8;
   background-color: transparent;
 }
 
@@ -5651,7 +5652,7 @@ fieldset:disabled .btn {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5764,7 +5765,7 @@ fieldset:disabled .btn {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -6209,7 +6210,7 @@ fieldset:disabled .btn {
 }
 
 .link-secondary {
-  color: #5034fc;
+  color: #086AD8;
 }
 
 .link-secondary:hover, .link-secondary:focus {
@@ -6599,7 +6600,7 @@ fieldset:disabled .btn {
 }
 
 .border-secondary {
-  border-color: #5034fc !important;
+  border-color: #086AD8 !important;
 }
 
 .border-custom-color {
@@ -7497,7 +7498,7 @@ fieldset:disabled .btn {
 }
 
 .text-secondary {
-  color: #5034fc !important;
+  color: #086AD8 !important;
 }
 
 .text-custom-color {
@@ -7549,7 +7550,7 @@ fieldset:disabled .btn {
 }
 
 .bg-secondary {
-  background-color: #5034fc !important;
+  background-color: #086AD8 !important;
 }
 
 .bg-custom-color {
@@ -11354,11 +11355,11 @@ fieldset:disabled .btn {
 }
 
 .bg-electric-violet {
-  background-color: #5338fc !important;
+  background-color: #086AD8 !important;
 }
 
 .bg-electric-violet-2 {
-  background-color: #5034fc !important;
+  background-color: #086AD8 !important;
 }
 
 .bg-electric-violet-3 {
@@ -11378,7 +11379,7 @@ fieldset:disabled .btn {
 }
 
 .bg-yellow {
-  background-color: #fcdc00 !important;
+  background-color: #086AD8 !important;
 }
 
 .bg-yellow-3 {
@@ -11486,7 +11487,7 @@ fieldset:disabled .btn {
 }
 
 .text-electric-violet-2 {
-  color: #5034fc !important;
+  color: #086AD8 !important;
 }
 
 .text-electric-violet-3 {
