@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="./plugins/theme-mode-switcher/switcher-panel.css">
     <link rel="stylesheet" href="./css/main.css">
     <!-- CUSTOM STYLESHEETS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body data-theme-mode-panel-active data-theme="light">
@@ -158,7 +161,7 @@
                     <div class="col-xl-4 col-lg-6 col-md-6 col-sm-9 col-xs-10 ">
                         <div class="section-title section-title--l5">
                             <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" style="font-style: italic; font-weight: 600">OUR SERVICES</h6>
-                            <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" style="font-family: Gilroy, sans-serif;">Have a look at how we curate huge traffic for our clients</h2>
+                            <h2 class="section-title__heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" style="font-family: Gilroy, sans-serif;">Don’t have a website or social media presence, no issues?</h2>
                             <p class="section-title__description" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">Join the success of small and large businesses that we have assisted in becoming well-known brands.</p>
                         </div>
                     </div>
@@ -218,22 +221,21 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-7 col-xs-8">
                         <div class="about-us__image-group-l4">
-                            <img class="w-100" src="./image/landing-page/about-us-image-l4-1.png" alt="" />
+                            <img class="w-100" src="./image/landing-page/about-us-image-l4-1.png" style="border-radius: 20px;" alt="" />
                             <div class="about-us__image-group-l4__img-1">
-                                <img class="w-100" src="./image/landing-page/about-us-image-l4-2.png" alt="" />
+                                <img class="w-100" src="./image/landing-page/about-us-image-l4-2.png" style="border-radius: 20px;" alt="" />
                             </div>
                         </div>
                     </div>
                     <div class="col-xl-5 offset-xl-2 col-lg-6 col-md-9 col-sm-11">
                         <div class="about-us-right">
                             <div class="section-title section-title--l4">
-                                <h2 class="section-title__heading mb-4">Don’t have a website or social media presence, no issues?</h2>
                                 <p class="section-title__description">We are a one-stop solution for all your digital needs, from getting a domain name to hosting, cloud transferring to cyber security, Building NFT platforms to creating full-fledged crypto brokering platforms, and more can be done in a well defined time frame that boosts your growth process.</p>
                                 <p class="section-title__description">In a year, our clients witnessed a 286 percent rise during first calls and a 597 percent increase in traffic within a 6-12 month timeline. Discover new opportunities with us. Have a look at what we have achieved for our clients</p>
                             </div>
                             <div class="about-us-counter about-us-counter--l4">
                                 <div class="counter-widgets">
-                                    <div class="counter-widgets__single counter-content text-center text-md-start">
+                                    <div class="counter-widgets__single counter-content text-center">
                                         <h2 class="counter-content__heading"><span class="counter">23</span>K</h2>
                                         <p class="counter-content__text">Revenue Generated</p>
                                     </div>
@@ -241,7 +243,7 @@
                                         <h2 class="counter-content__heading">10:1</h2>
                                         <p class="counter-content__text">ROI on Average</p>
                                     </div>
-                                    <div class="counter-widgets__single counter-content text-center  text-md-end">
+                                    <div class="counter-widgets__single counter-content text-center">
                                         <h2 class="counter-content__heading"><span class="counter">8</span>+</h2>
                                         <p class="counter-content__text">Services Offered</p>
                                     </div>
@@ -306,42 +308,34 @@
                                 We never let you wait for us, one hint of interest by filling this form and voila! Your phone rings.
                             </h2>
                         </div>
-                        <form action="#" class="contact-form" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
+                        <form action="" onsubmit="contactFormSubmit()" method="POST" class="contact-form" id="contactForm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true">
                             <div class="row">
                                 <div class="col-lg-4 mb-4">
                                     <div class="form-floating">
-                                        <input class="form-control border-0" placeholder="Leave a comment here" id="floatinginput" />
-                                        <label for="floatinginput">Name</label>
+                                        <input type="text" class="form-control border-0" placeholder="Name" id="name" />
+                                        <label for="name">Name</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 mb-4">
                                     <div class="form-floating">
-                                        <input class="form-control border-0" placeholder="Leave a comment here" id="floatinginput" />
-                                        <label for="floatinginput">Your Email</label>
+                                        <input type="email" class="form-control border-0" placeholder="Email" id="emailContact" required />
+                                        <label for="emailContact">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-4 mb-4">
                                     <div class="form-floating">
-                                        <input class="form-control border-0" placeholder="Leave a comment here" id="floatinginput2" />
-                                        <label for="floatinginput2">Phone number</label>
+                                        <input type="text" class="form-control border-0" placeholder="Phone Number" id="phoneNumber" />
+                                        <label for="phoneNumber">Phone number</label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control border-0" placeholder="Leave a comment here" id="floatingTextarea3" style="height: 100px"></textarea>
-                                        <label for="floatingTextarea3">Your Message Here </label>
+                                        <textarea class="form-control border-0" placeholder="Leave a comment here" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Your Message Here </label>
                                     </div>
                                 </div>
                                 <div class="col-lg-12">
-                                    <div class="row align-items-center mt-3">
-                                        <div class="col-md-8 col-lg-7 col-md-6 col-xl-8 pt-3">
-                                            <div class="form-check d-flex align-items-center">
-                                                <input class="form-check-input bg-white float-none mt-0" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Your email address will not be published. Required fields are marked *
-                                                </label>
-                                            </div>
-                                        </div>
+                                    <div class="row align-items-center mt-3" style="justify-content: end;">
                                         <div class="col-md-4 col-lg-5 col-xl-4 text-md-end pt-3">
                                             <button class="btn btn-primary shadow--primary-4 btn--lg-2 rounded-55 text-white">Send Message</button>
                                         </div>
@@ -349,6 +343,71 @@
                                 </div>
                             </div>
                         </form>
+                        <script>
+                            $("#contactForm").submit(function(e) {
+                                e.preventDefault();
+                            })
+
+                            function contactFormSubmit() {
+                                const notyf = new Notyf({
+                                    duration: 2000,
+                                    position: {
+                                        x: 'right',
+                                        y: 'top',
+                                    },
+                                });
+                                var name = document.getElementById("name");
+                                var email = document.getElementById("emailContact");
+                                var phone = document.getElementById("phoneNumber");
+                                var message = document.getElementById("message");
+
+                                // PHONE NUMBER PATTERN
+                                var phonePatternValue = phone.value;
+                                var phonePattern = new RegExp("^((\\(\\d{3}\\))|\\d{3})[- .]?\\d{3}[- .]?\\d{4}$");
+                                if ((phonePattern.test(phonePatternValue) != true)) {
+                                    notyf.error('Please enter valid mobile number');
+                                    phone.value = "";
+                                    phone.focus();
+                                } else {
+                                    if (name.value == "" || email.value == "" || phone.value == "" || message == "") {
+                                        if (name.value == "") {
+                                            notyf.error('Please enter the name');
+                                            name.focus();
+                                        }
+                                        if (email.value == "") {
+                                            notyf.error('Please enter the email');
+                                            email.focus();
+                                        }
+                                        if (phone.value == "") {
+                                            notyf.error('Please enter the phone');
+                                            phone.focus();
+                                        }
+                                    } else {
+                                        var formData = new FormData();
+                                        formData.append("name", name.value);
+                                        formData.append("email", email.value);
+                                        formData.append("phone", phone.value);
+                                        formData.append("message", message.value);
+                                        $.ajax({
+                                            url: "./contact-form-submit.php",
+                                            type: 'POST',
+                                            data: formData,
+                                            contentType: false,
+                                            processData: false,
+                                            success: function(data) {
+                                                console.log(data);
+                                                if (data == "New record created successfully") {
+                                                    notyf.success('Your details have been submitted successfully. We will contact you shortly.')
+                                                } else if (data == "error") {
+                                                    notyf.error('Something went wrong. Please try again later.')
+                                                }
+                                            }
+                                        });
+                                        document.getElementById("contactForm").reset();
+                                    }
+                                }
+                            }
+                        </script>
                     </div>
                     <div class="col-xl-5 col-lg-5" data-aos="fade-left" data-aos-duration="500" data-aos-delay="400" data-aos-once="true">
                         <div class="contact-widget-box">
@@ -394,11 +453,11 @@
         </div>
         <div class="testimonial-section testimonial-section--l3 bg-default-3">
             <div class="container">
-                <div class="row justify-content-center">
+                <div class="row">
                     <div class="col-12 col-lg-8 col-xl-9 col-xxl-7">
                         <div class="section-title section-title--l3">
                             <h6 class="section-title__sub-heading" data-aos="fade-up" data-aos-duration="500" data-aos-once="true" style="font-style: italic; font-weight: 600">TESTIMONIALS</h6>
-                            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" style="font-weight: 700;">We Care About Our Customers Experience Too</h2>
+                            <h2 class="section-title__heading mb-4" data-aos="fade-up" data-aos-duration="500" data-aos-delay="300" data-aos-once="true" style="font-weight: 700;">Have a look at how we curate huge traffic for our clients</h2>
                         </div>
                     </div>
                 </div>
@@ -448,7 +507,7 @@
                         </div>
                         <div class="col-lg-5">
                             <div class="cta-section--l2__button text-center text-lg-end">
-                                <a class="btn btn--190 btn-white rounded-55" href="#" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">Contact Us</a>
+                                <a class="btn btn--190 btn-white rounded-55" href="#" data-aos="fade-left" data-aos-duration="500" data-aos-once="true">Book a Free Consultation</a>
                             </div>
                         </div>
                     </div>
@@ -517,10 +576,23 @@
     <script src="./plugins/slick/slick.min.js"></script>
     <script src="./plugins/skill-bar/skill.bars.jquery.js"></script>
     <script src="./plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
     <!--<script src="./plugins/theme-mode-switcher/gr-theme-mode-switcher.js"></script>-->
     <!-- ACTIVATION SCRIPTS -->
     <script src="./js/menu.js"></script>
     <script src="./js/custom.js"></script>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            Calendly.initBadgeWidget({
+                url: 'https://calendly.com/rts-admin',
+                text: 'Book a Free Consultation',
+                color: '#0069ff',
+                textColor: '#ffffff',
+                branding: true
+            });
+        }
+    </script>
 </body>
 
 </html>

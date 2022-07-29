@@ -7092,11 +7092,17 @@ ________________________________ */
 }
 
 .section-title--l4 .section-title__description {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   letter-spacing: normal;
   line-height: 1.875;
   color: var(--color-texts-3);
+}
+
+.calendly-badge-widget .calendly-badge-content {
+  height: 60px !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 18px !important;
 }
 
 /*
